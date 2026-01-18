@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>HandP help </title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-50 text-gray-800 ">
+
+    <!-- ================= HERO / HEADER ================= -->
+    <header class="relative h-[75vh] flex items-center overflow-hidden">
+
+        <!-- BACKGROUND IMAGE -->
+        <div class="absolute inset-0 bg-cover bg-left"
+            style="background-image:url('https://www.zebra.com/content/dam/zebra_dam/global/zcom-web-production/web-production-photography/web002/faq-what-is-a-thermal-printer-hero-16x9-3600x2025.jpg.imgo.jpg');">
+        </div>
+
+        <!-- DARK OVERLAY -->
+        <div class="absolute inset-0 bg-slate-900/70"></div>
+
+        <!-- CONTENT -->
+        <div class="relative max-w-7xl mx-auto px-6 w-full">
+            <div class="grid md:grid-cols-2 items-center gap-12">
+
+                <!-- LEFT CONTENT -->
+                <div class="text-left text-white">
+                    <!-- <img src="https://storage.googleapis.com/a1aa/image/d5c27842-5f28-4f1b-0df9-1ad19c57b756.jpg"
+                        class="w-14 rounded-full mb-6"> -->
+
+                    <h1 class="text-4xl md:text-5xl font-bold mb-6 leading-tight">
+                        Start HP Printer Setup
+                    </h1>
+
+                    <p class="text-gray-300 mb-10 max-w-md">
+                        Install drivers, fix errors & complete your printer setup
+                        with expert assistance.
+                    </p>
+
+                    <!-- BUTTONS SIDE BY SIDE -->
+                    <div class="flex flex-wrap gap-4">
+
+                        <!-- CALL SUPPORT -->
+                        <button onclick="openSupportChat()" class="relative px-8 py-3 rounded-full font-semibold text-white 
+                            bg-gradient-to-r from-blue-600 to-blue-800 
+                            border border-blue-900 shadow-lg
+                            transition-all duration-300 ease-out
+                            hover:-translate-y-1 hover:scale-105 hover:shadow-blue-500/50
+                            active:scale-95">
+
+                            📞 +1-855-775-4304
+
+                            <!-- Pulse Ring -->
+                            <span class="absolute inset-0 rounded-full border border-white/60 animate-ping"></span>
+
+                        </button>
+
+
+
+                    </div>
+                </div>
+
+                <!-- RIGHT EMPTY (IMAGE ALREADY IN BACKGROUND) -->
+                <div class="hidden md:block"></div>
+
+            </div>
+        </div>
+    </header>
+
+    <div class="py-10 bg-gray-300 text-center overflow-hidden">
+        <!-- CALL SUPPORT -->
+        <button onclick="openSupportChat()" class="relative px-8 py-3 rounded-full font-semibold text-white 
+                            bg-gradient-to-r from-blue-600 to-blue-800 
+                            border border-blue-900 shadow-lg
+                            transition-all duration-300 ease-out
+                            hover:-translate-y-1 hover:scale-105 hover:shadow-blue-500/50
+                            active:scale-95">
+
+            Talk To Expert +1-855-775-4304
+
+            <!-- Pulse Ring -->
+            <span class="absolute inset-0 rounded-full border border-white/60 animate-ping"></span>
+
+        </button>
+    </div>
+
+    <section class="max-w-7xl mx-auto px-6 py-16">
+        <h2 class="text-3xl font-bold text-center mb-10">Our Printer Services</h2>
+
+        <div class="grid md:grid-cols-3 gap-8 text-center">
+
+            <div class="bg-white p-6 rounded-xl shadow hover:shadow-xl transition">
+                <img class="w-16 mx-auto mb-4" src="https://cdn-icons-png.flaticon.com/512/4712/4712109.png">
+                <h3 class="font-semibold text-lg mb-2">Printer Setup</h3>
+                <p class="text-sm text-gray-500 mb-4">Complete Epson printer installation & configuration.</p>
+                <!-- Call Button -->
+                <div class="bg-gray-300 pt-4 pb-4">
+                    <button onclick="openSupportChat()" class="relative px-6 py-2 rounded-full font-semibold text-white 
+          bg-gradient-to-r from-blue-600 to-blue-800 border border-blue-900 shadow-lg
+          transition-all duration-300 hover:-translate-y-1 hover:scale-105 active:scale-95">
+                        📞 Call Now
+                        <span class="absolute inset-0 rounded-full border border-white/60 animate-ping"></span>
+                    </button>
+                </div>
+            </div>
+
+            <div class="bg-white p-6 rounded-xl shadow hover:shadow-xl transition">
+                <img class="w-16 mx-auto mb-4" src="https://cdn-icons-png.flaticon.com/512/942/942748.png">
+                <h3 class="font-semibold text-lg mb-2">Driver Installation</h3>
+                <p class="text-sm text-gray-500 mb-4">Fix missing drivers & software issues instantly.</p>
+                <div class="bg-gray-300 pt-4 pb-4">
+                    <button onclick="openSupportChat()" class="relative px-6 py-2 rounded-full font-semibold text-white 
+          bg-gradient-to-r from-blue-600 to-blue-800 border border-blue-900 shadow-lg
+          transition-all duration-300 hover:-translate-y-1 hover:scale-105 active:scale-95">
+                        📞 Call Now
+                        <span class="absolute inset-0 rounded-full border border-white/60 animate-ping"></span>
+                    </button>
+                </div>
+            </div>
+
+            <div class="bg-white p-6 rounded-xl shadow hover:shadow-xl transition">
+                <img class="w-16 mx-auto mb-4" src="https://cdn-icons-png.flaticon.com/512/942/942803.png">
+                <h3 class="font-semibold text-lg mb-2">Error Fixing</h3>
+                <p class="text-sm text-gray-500 mb-4">Resolve offline, paper jam & wifi errors.</p>
+                <div class="bg-gray-300 pt-4 pb-4">
+                    <button onclick="openSupportChat()" class="relative px-6 py-2 rounded-full font-semibold text-white 
+          bg-gradient-to-r from-blue-600 to-blue-800 border border-blue-900 shadow-lg
+          transition-all duration-300 hover:-translate-y-1 hover:scale-105 active:scale-95">
+                        📞 Call Now
+                        <span class="absolute inset-0 rounded-full border border-white/60 animate-ping"></span>
+                    </button>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <div class="py-10 bg-gray-300 text-center overflow-hidden">
+        <!-- CALL SUPPORT -->
+        <button onclick="openSupportChat()" class="relative px-8 py-3 rounded-full font-semibold text-white 
+                            bg-gradient-to-r from-blue-600 to-blue-800 
+                            border border-blue-900 shadow-lg
+                            transition-all duration-300 ease-out
+                            hover:-translate-y-1 hover:scale-105 hover:shadow-blue-500/50
+                            active:scale-95">
+
+            24x7 Support +1-855-775-4304
+
+            <!-- Pulse Ring -->
+            <span class="absolute inset-0 rounded-full border border-white/60 animate-ping"></span>
+
+        </button>
+    </div>
+    <section class="max-w-7xl mx-auto px-6 py-16">
+        <h2 class="text-3xl font-bold text-center mb-4">Quick Printer Actions</h2>
+        <p class="text-center text-gray-500 mb-10">
+            Select your issue and connect instantly with our support team
+        </p>
+
+        <div class="grid sm:grid-cols-2 md:grid-cols-4 gap-6 text-center">
+
+            <!-- Button 1 -->
+            <div class="bg-white p-6 rounded-xl shadow hover:shadow-xl transition">
+                <h3 class="font-semibold mb-4">New Printer Setup</h3>
+                <button onclick="openSupportChat()" class="relative px-6 py-2 rounded-full font-semibold text-white 
+        bg-gradient-to-r from-blue-600 to-blue-800 border border-blue-900 shadow-lg
+        transition-all duration-300 hover:-translate-y-1 hover:scale-105 active:scale-95">
+                    📞 Setup Now
+                    <span class="absolute inset-0 rounded-full border border-white/60 animate-ping"></span>
+                </button>
+            </div>
+
+            <!-- Button 2 -->
+            <div class="bg-white p-6 rounded-xl shadow hover:shadow-xl transition">
+                <h3 class="font-semibold mb-4">Driver Download</h3>
+                <button onclick="openSupportChat()" class="relative px-6 py-2 rounded-full font-semibold text-white 
+        bg-gradient-to-r from-blue-600 to-blue-800 border border-blue-900 shadow-lg
+        transition-all duration-300 hover:-translate-y-1 hover:scale-105 active:scale-95">
+                    💻 Download Help
+                    <span class="absolute inset-0 rounded-full border border-white/60 animate-ping"></span>
+                </button>
+            </div>
+
+            <!-- Button 3 -->
+            <div class="bg-white p-6 rounded-xl shadow hover:shadow-xl transition">
+                <h3 class="font-semibold mb-4">Fix Printer Offline</h3>
+                <button onclick="openSupportChat()" class="relative px-6 py-2 rounded-full font-semibold text-white 
+        bg-gradient-to-r from-blue-600 to-blue-800 border border-blue-900 shadow-lg
+        transition-all duration-300 hover:-translate-y-1 hover:scale-105 active:scale-95">
+                    ⚙ Fix Now
+                    <span class="absolute inset-0 rounded-full border border-white/60 animate-ping"></span>
+                </button>
+            </div>
+
+            <!-- Button 4 -->
+            <div class="bg-white p-6 rounded-xl shadow hover:shadow-xl transition">
+                <h3 class="font-semibold mb-4">Talk to Expert</h3>
+                <button onclick="openSupportChat()" class="relative px-6 py-2 rounded-full font-semibold text-white 
+        bg-gradient-to-r from-blue-600 to-blue-800 border border-blue-900 shadow-lg
+        transition-all duration-300 hover:-translate-y-1 hover:scale-105 active:scale-95">
+                    🎧 Call Expert
+                    <span class="absolute inset-0 rounded-full border border-white/60 animate-ping"></span>
+                </button>
+            </div>
+
+        </div>
+    </section>
+
+    <div class="py-10 bg-gray-300 text-center overflow-hidden">
+        <!-- CALL SUPPORT -->
+        <button onclick="openSupportChat()" class="relative px-8 py-3 rounded-full font-semibold text-white 
+                            bg-gradient-to-r from-blue-600 to-blue-800 
+                            border border-blue-900 shadow-lg
+                            transition-all duration-300 ease-out
+                            hover:-translate-y-1 hover:scale-105 hover:shadow-blue-500/50
+                            active:scale-95">
+
+            Call Now +1-855-775-4304
+
+            <!-- Pulse Ring -->
+            <span class="absolute inset-0 rounded-full border border-white/60 animate-ping"></span>
+
+        </button>
+    </div>
+
+
+    <!-- ================= BREADCRUMB ================= -->
+    <section class="max-w-7xl mx-auto px-6 mt-10 mb-6">
+        <p class="text-gray-500 text-sm">Home / Shop</p>
+        <h2 class="text-3xl font-bold mt-2">Shop</h2>
+    </section>
+
+    <!-- ================= PRODUCTS ================= -->
+    <section class="max-w-7xl mx-auto px-6 pb-20">
+
+        <!-- PRODUCT GRID -->
+        <div id="productGrid" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+        </div>
+
+        <!-- ================= PAGINATION ================= -->
+        <nav class="flex justify-center mt-14 space-x-3" id="pagination"></nav>
+
+    </section>
+
+    <section class="bg-gray-700 text-white py-12 text-center overflow-hidden">
+        <h2 class="text-2xl font-bold mb-4">Talk to our live experts now</h2>
+        <!-- <p class="text-blue-100 mb-6">Talk to our live  experts now</p> -->
+
+        <button onclick="openSupportChat()" class="relative px-10 py-4 rounded-full font-semibold text-white 
+    bg-gradient-to-r from-blue-800 to-blue-950 border border-blue-900 shadow-lg
+    transition-all duration-300 hover:-translate-y-1 hover:scale-105 active:scale-95">
+            📞 Call Support Now
+            <span class="absolute inset-0 rounded-full border border-white/60 animate-ping"></span>
+        </button>
+    </section>
+
+
+
+
+    <!-- ================= CALL TO ACTION ================= -->
+    <section class="bg-gradient-to-r from-blue-700 to-blue-900 text-white">
+        <div class="max-w-7xl mx-auto px-6 py-14">
+            <div class="grid md:grid-cols-2 gap-10 items-center">
+
+                <!-- LEFT CONTENT -->
+                <div>
+                    <h2 class="text-3xl font-bold mb-4">
+                        Need Help Setting Up Your Printer?
+                    </h2>
+                    <p class="text-blue-100 max-w-md">
+                        Facing installation errors, driver issues, or connectivity problems?
+                        Our printer experts are available 24/7 to assist you instantly.
+                    </p>
+                </div>
+
+                <!-- RIGHT CTA -->
+                <div class="flex flex-col sm:flex-row gap-4 md:justify-end">
+
+
+
+                    <a href="tel:+18557754304">
+                        <button class="bg-blue-600 border border-white/40
+                   hover:bg-blue-500 transition
+                   px-8 py-3 rounded-full font-semibold shadow-lg">
+                            📞 Call Now: +1-855-775-4304
+                        </button>
+                    </a>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- ================= FOOTER ================= -->
+    <footer class="bg-gray-900 text-gray-300 px-6 py-14">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-10">
+
+            <div>
+                <h3 class="text-white font-semibold text-lg mb-4">Disclaimer</h3>
+                <p class="text-sm leading-relaxed">
+                    All information is provided as-is. Use products at your own risk.
+                </p>
+            </div>
+
+            <div>
+                <h3 class="text-white font-semibold text-lg mb-4">Quick Links</h3>
+                <ul class="space-y-2 text-sm">
+                    <li><a href="#" class="hover:underline">Home</a></li>
+                    <li><a href="#" class="hover:underline">About</a></li>
+                    <li><a href="#" class="hover:underline">Contact</a></li>
+                    <li><a href="#" class="hover:underline">Privacy Policy</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h3 class="text-white font-semibold text-lg mb-4">Contact</h3>
+                <p onclick="openSupportChat()" class="text-sm cursor-pointer ">📞 +1-855-775-4304</p>
+                <p class="text-sm">✉ info@WorkFLow.online</p>
+            </div>
+        </div>
+
+        <p class="text-center text-gray-500 text-sm mt-12">
+            © 2026 WorkFLow. All rights reserved.
+        </p>
+    </footer>
+    <script>
+
+
+
+        function openSupportChat() {
+            window.location.href = "tel:+1-855-775-4304";
+        }
+        // ================= PRODUCT DATA =================
+        const products = [
+            {
+                img: "./products/1.jpg",
+                title: "WorkFLow-22 SP100 Black Toner Cartridge",
+                old: "₹ 3,650",
+                price: "₹ 1,149"
+            },
+            {
+                img: "./products/2.jpg",
+                title: "WorkFLow WiFi Colour Printer",
+                old: "₹ 6,833",
+                price: "₹ 5,499"
+            },
+            {
+                img: "./products/3.jpg",
+                title: "WorkFLow Color Printer All-in-One",
+                old: "₹ 4,900",
+                price: "₹ 4,499"
+            },
+            {
+                img: "./products/4.jpg",
+                title: "WorkFLow 152A Black Toner",
+                old: "₹ 4,500",
+                price: "₹ 2,149"
+            },
+            {
+                img: "./products/5.jpg",
+                title: "WorkFLow 210KEV Toner Cartridge",
+                old: "₹ 3,550",
+                price: "₹ 1,049"
+            },
+            {
+                img: "./products/6.jpg",
+                title: "WorkFLow 303 Black Toner",
+                old: "",
+                price: "₹ 849"
+            },
+            {
+                img: "./products/7.jpg",
+                title: "WorkFLow GT52/53 Ink Bottle Set",
+                old: "₹ 2,750",
+                price: "₹ 2,230"
+            },
+            {
+                img: "./products/8.jpg",
+                title: "WorkFLow GT53 Black Ink Bottle",
+                old: "₹ 770",
+                price: "₹ 416"
+            },
+            {
+                img: "./products/9.jpg",
+                title: "WorkFLow GI-790 Ink Bottle Set",
+                old: "₹ 2,544",
+                price: "₹ 2,099"
+            },
+            {
+                img: "./products/10.jpg",
+                title: "WorkFLow Refillable Ink Tank Set",
+                old: "₹ 2,250",
+                price: "₹ 1,620"
+            },
+            {
+                img: "./products/11.jpg",
+                title: "WorkFLow Automatic Duplex Laser Printer",
+                old: "₹ 22,365",
+                price: "₹ 16,299"
+            },
+            {
+                img: "./products/12.jpg",
+                title: "WorkFLow All-in-One Printer",
+                old: "₹ 4,589",
+                price: "₹ 4,199"
+            }
+        ];
+
+        // ================= PAGINATION LOGIC =================
+        const itemsPerPage = 8;
+        let currentPage = 1;
+
+        function renderProducts() {
+            const grid = document.getElementById("productGrid");
+            grid.innerHTML = "";
+
+            const start = (currentPage - 1) * itemsPerPage;
+            const end = start + itemsPerPage;
+            const pageItems = products.slice(start, end);
+
+            pageItems.forEach(p => {
+                grid.innerHTML += `
+        <article class="bg-white border rounded-xl p-5 relative hover:shadow-xl transition group">
+          <span class="absolute top-3 right-3 text-xs bg-blue-600 text-white px-2 py-1 rounded">
+            SALE
+          </span>
+          <img src="${p.img}" loading="lazy"
+            class="mx-auto h-36 w-full object-contain mb-4 group-hover:scale-105 transition" />
+          <h3 class="text-sm font-semibold text-blue-600 mb-2">
+            ${p.title}
+          </h3>
+          <div class="flex gap-2 text-sm">
+            ${p.old ? `<span class="line-through text-gray-400">${p.old}</span>` : ""}
+            <span class="font-bold">${p.price}</span>
+          </div>
+        </article>
+      `;
+            });
+        }
+
+        function renderPagination() {
+            const totalPages = Math.ceil(products.length / itemsPerPage);
+            const pagination = document.getElementById("pagination");
+            pagination.innerHTML = "";
+
+            for (let i = 1; i <= totalPages; i++) {
+                pagination.innerHTML += `
+        <button onclick="goToPage(${i})"
+          class="w-10 h-10 rounded-lg ${i === currentPage
+                        ? "bg-blue-600 text-white"
+                        : "border hover:bg-gray-200"} font-semibold">
+          ${i}
+        </button>
+      `;
+            }
+        }
+
+        function goToPage(page) {
+            currentPage = page;
+            renderProducts();
+            renderPagination();
+            window.scrollTo({ top: 0, behavior: "smooth" });
+        }
+
+        // INIT
+        renderProducts();
+        renderPagination();
+    </script>
+</body>
+
+
+</html>

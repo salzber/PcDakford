@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>PC Dakford </title>
+    <link rel="icon" href="/Images/favicon-32x32.png" sizes="32x32">
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body class="bg-gray-50 text-gray-800 font-sans leading-relaxed">
+
+    <!-- ===== HEADER ===== -->
+    <!-- ===== HEADER ===== -->
+    <header class="bg-white/90 backdrop-blur shadow-md sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+
+            <!-- Logo -->
+            <a href="index.html" class="flex items-center space-x-2">
+                <span class="font-bold text-2xl text-blue-700">PC Dakford</span>
+            </a>
+
+            <!-- Desktop Nav -->
+            <nav class="hidden md:flex space-x-8 text-gray-700 font-medium">
+                <a href="index.html" class="hover:text-blue-600 transition">Home</a>
+                <a href="about.html" class="hover:text-blue-600 transition">About</a>
+                <a href="services.html" class="hover:text-blue-600 transition">Services</a>
+                <a href="partnerWithUs.html" class="hover:text-blue-600 transition">Partner With Us</a>
+                <a href="membership.html" class="hover:text-blue-600 transition">Membership</a>
+            </nav>
+
+            <!-- Desktop Right -->
+            <div class="hidden md:flex items-center space-x-5">
+                <span class="text-gray-600 font-medium">+1-855-775-4304</span>
+                <a onclick="callNow()" class="px-5 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition">
+                    Get In Touch
+                </a>
+            </div>
+
+            <!-- Mobile Button -->
+            <button id="menuBtn" class="md:hidden text-gray-700 focus:outline-none">
+                <svg id="menuIcon" class="h-7 w-7" fill="none" stroke="currentColor" stroke-width="2"
+                    viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+            </button>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobileMenu" class="hidden md:hidden bg-white shadow-lg">
+            <nav class="flex flex-col px-6 py-4 space-y-3 text-gray-700 font-medium">
+                <a href="index.html" class="hover:text-blue-600">Home</a>
+                <a href="about.html" class="hover:text-blue-600">About</a>
+                <a href="services.html" class="hover:text-blue-600">Services</a>
+                <a href="partnerWithUs.html" class="hover:text-blue-600">Partner With Us</a>
+                <a href="membership.html" class="hover:text-blue-600">Membership</a>
+
+                <a onclick="callNow()" class="text-blue-600 font-semibold">
+                    📞 +1-855-775-4304
+                </a>
+
+                <a onclick="callNow()"
+                    class="mt-2 px-4 py-2 bg-blue-600 text-white rounded-lg text-center hover:bg-blue-700 transition">
+                    Get In Touch
+                </a>
+            </nav>
+        </div>
+    </header>
+
+
+
+
+    <main>
+        <!-- ===== HERO SECTION ===== -->
+        <section class="bg-gradient-to-r from-blue-600 to-cyan-500 text-white py-20">
+            <div class="max-w-6xl mx-auto px-6 text-center">
+                <h1 data-aos="fade-up" class="text-4xl md:text-5xl font-bold mb-4">
+                    Professional Computer Services
+                </h1>
+                <p data-aos="fade-up" data-aos-delay="150" class="max-w-3xl mx-auto text-gray-100">
+                    Fast, Secure & Reliable Computer Support by PC Dakford
+                </p>
+            </div>
+        </section>
+
+
+        <!-- ===== INTRO CONTENT ===== -->
+        <section class="py-16">
+            <div class="max-w-6xl mx-auto px-6 text-center">
+
+                <h2 data-aos="fade-up" class="text-3xl font-bold mb-6">
+                    PC Dakford – Your Trusted Computer Service Partner
+                </h2>
+
+                <p data-aos="fade-up" data-aos-delay="150" class="text-gray-600 max-w-4xl mx-auto">
+                    In today’s digital-driven world, computers are the backbone of productivity.
+                    When technology slows you down, PC Dakford steps in with expert solutions
+                    that keep your systems fast, secure, and reliable.
+                </p>
+
+            </div>
+        </section>
+
+
+        <!-- ===== COMMON ISSUES ===== -->
+        <section class="py-16 bg-white">
+            <div class="max-w-6xl mx-auto px-6">
+
+                <h2 data-aos="fade-up" class="text-3xl font-bold text-center mb-12">
+                    Common Computer Issues We Solve
+                </h2>
+
+                <div class="grid md:grid-cols-3 gap-8">
+
+                    <!-- Card -->
+                    <div data-aos="fade-up" data-aos-delay="100"
+                        class="bg-gray-50 p-6 rounded-xl shadow hover:shadow-lg transition">
+                        <h3 class="font-semibold text-lg mb-2">Slow System Performance</h3>
+                        <p class="text-gray-600 text-sm">
+                            Deep system cleanup & optimization to restore speed and stability.
+                        </p>
+                    </div>
+
+                    <div data-aos="fade-up" data-aos-delay="200"
+                        class="bg-gray-50 p-6 rounded-xl shadow hover:shadow-lg transition">
+                        <h3 class="font-semibold text-lg mb-2">Software Installation</h3>
+                        <p class="text-gray-600 text-sm">
+                            Smooth installation & configuration with zero compatibility issues.
+                        </p>
+                    </div>
+
+                    <div data-aos="fade-up" data-aos-delay="300"
+                        class="bg-gray-50 p-6 rounded-xl shadow hover:shadow-lg transition">
+                        <h3 class="font-semibold text-lg mb-2">Hardware Diagnostics</h3>
+                        <p class="text-gray-600 text-sm">
+                            Quick detection & repair of failing hardware components.
+                        </p>
+                    </div>
+
+                    <div data-aos="fade-up" data-aos-delay="400"
+                        class="bg-gray-50 p-6 rounded-xl shadow hover:shadow-lg transition">
+                        <h3 class="font-semibold text-lg mb-2">Virus & Malware Removal</h3>
+                        <p class="text-gray-600 text-sm">
+                            Complete virus cleanup and future protection setup.
+                        </p>
+                    </div>
+
+                    <div data-aos="fade-up" data-aos-delay="500"
+                        class="bg-gray-50 p-6 rounded-xl shadow hover:shadow-lg transition">
+                        <h3 class="font-semibold text-lg mb-2">Data Recovery & Backup</h3>
+                        <p class="text-gray-600 text-sm">
+                            Recover lost files & create secure backup systems.
+                        </p>
+                    </div>
+
+                    <div data-aos="fade-up" data-aos-delay="600"
+                        class="bg-gray-50 p-6 rounded-xl shadow hover:shadow-lg transition">
+                        <h3 class="font-semibold text-lg mb-2">OS Installation & Support</h3>
+                        <p class="text-gray-600 text-sm">
+                            Windows, macOS & Linux installation and troubleshooting.
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+        <!-- ===== WHY CHOOSE US ===== -->
+        <section class="py-16 bg-gradient-to-r from-cyan-500 to-blue-600 text-white">
+            <div class="max-w-6xl mx-auto px-6 text-center">
+
+                <h2 data-aos="fade-up" class="text-3xl font-bold mb-10">
+                    Why Choose PC Dakford?
+                </h2>
+
+                <div class="grid md:grid-cols-4 gap-6">
+
+                    <div data-aos="zoom-in" class="bg-white/10 p-6 rounded-xl">
+                        ✔ Certified Technicians
+                    </div>
+
+                    <div data-aos="zoom-in" data-aos-delay="100" class="bg-white/10 p-6 rounded-xl">
+                        ✔ Remote & On-Site Support
+                    </div>
+
+                    <div data-aos="zoom-in" data-aos-delay="200" class="bg-white/10 p-6 rounded-xl">
+                        ✔ Affordable Pricing
+                    </div>
+
+                    <div data-aos="zoom-in" data-aos-delay="300" class="bg-white/10 p-6 rounded-xl">
+                        ✔ Quick Response Time
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- ===== CTA ===== -->
+        <section class="py-20 bg-white text-center">
+            <h2 data-aos="fade-up" class="text-3xl font-bold mb-4">
+                Experience Hassle-Free Computer Support
+            </h2>
+            <p data-aos="fade-up" data-aos-delay="150" class="text-gray-600 mb-8">
+                Choose PC Dakford — where your technology is always in expert hands.
+            </p>
+
+            <a onclick="callNow()" class="bg-blue-600 text-white px-8 py-3 rounded-full shadow 
+            hover:bg-blue-700 transition">
+                Get Support Now
+            </a>
+        </section>
+
+    </main>
+
+
+
+
+    <footer class="bg-blue-900 text-gray-300 pt-16 pb-8 overflow-hidden">
+
+        <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-10">
+
+            <!-- Brand -->
+            <div data-aos="fade-up">
+                <h2 class="font-bold text-white text-2xl mb-4">PC Dakford</h2>
+                <p class="text-gray-400 text-sm max-w-xs">
+                    Any Device, Any Problem — We Fix It!
+                    Your trusted 24/7 technology support partner.
+                </p>
+
+                <div class="mt-5 flex space-x-4">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjAr2dd0rByz6UTQVYZQ8rz41uctOCri-I0w&s"
+                        class="h-7 rounded">
+                    <img src="https://www.malwarebytes.com/wp-content/uploads/sites/2/2017/07/google-play-protect.png?w=1240"
+                        class="h-7 rounded">
+                </div>
+            </div>
+
+            <!-- Services -->
+            <div data-aos="fade-up" data-aos-delay="150">
+                <h3 class="font-semibold text-white mb-4">Our Services</h3>
+                <ul class="space-y-2 text-gray-400 text-sm">
+                    <li><a class="hover:text-white transition" href="Computer.html">Computer</a></li>
+                    <li><a class="hover:text-white transition" href="Printer.html">Printer & Scanner</a></li>
+                    <li><a class="hover:text-white transition" href="Network.html">WiFi & Network</a></li>
+                    <li><a class="hover:text-white transition" href="SmartHome.html">Smart Home</a></li>
+                </ul>
+            </div>
+
+            <!-- Useful Links -->
+            <div data-aos="fade-up" data-aos-delay="300">
+                <h3 class="font-semibold text-white mb-4">Useful Links</h3>
+                <ul class="space-y-2 text-gray-400 text-sm">
+                    <li><a class="hover:text-white transition" href="about.html">About Us</a></li>
+                    <li><a class="hover:text-white transition" href="partner.html">Partner With Us</a></li>
+                    <li><a class="hover:text-white transition" href="membership.html">Membership</a></li>
+                    <li><a class="hover:text-white transition" href="faqs.html">FAQs</a></li>
+                    <li><a class="hover:text-white transition" href="terms.html">Terms & Privacy</a></li>
+                </ul>
+            </div>
+
+            <!-- Contact -->
+            <div data-aos="fade-up" data-aos-delay="450">
+                <h3 class="font-semibold text-white mb-4">Contact Info</h3>
+                <ul class="space-y-2 text-gray-400 text-sm">
+                    <li>📧 info@pcdakford.com</li>
+                    <li>📞 +1-855-775-4304</li>
+                    <li>📍 123 Technology Blvd, USA</li>
+                </ul>
+            </div>
+
+        </div>
+
+        <!-- Bottom Bar -->
+        <div class="border-t border-blue-800 mt-10 pt-4 text-center text-gray-400 text-xs">
+            © 2024 PC Dakford. All Rights Reserved.
+        </div>
+
+    </footer>
+
+
+    <!-- JavaScript for Mobile Menu Toggle -->
+    <script src="./index.js"></script>
+
+</body>
+
+</html>

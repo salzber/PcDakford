@@ -1,0 +1,101 @@
+/* ===== Custom Scrollbar ===== */
+
+/* Width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f5f9;  /* light gray */
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #2563eb, #06b6d4); 
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(180deg, #1e40af, #0891b2);
+}
+
+/* Firefox Support */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #2563eb #f1f5f9;
+}
+
+
+
+ /* Custom styles for testimonial cards */
+    .star-rating {
+      color: #fbbf24;
+      /* amber-400 */
+    }
+
+    .step-btn {
+      @apply px-6 py-2 rounded-full bg-white text-gray-700 font-medium shadow hover:bg-blue-600 hover:text-white transition duration-300;
+    }
+
+    .step-active {
+      @apply bg-blue-600 text-white shadow-lg;
+    }
+
+    @keyframes slideUp {
+      from {
+        opacity: 0;
+        transform: translateY(25px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .slide-animate {
+      animation: slideUp 0.5s ease-out;
+    }
+
+    .no-scrollbar::-webkit-scrollbar {
+      display: none;
+    }
+
+    .no-scrollbar {
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+    }
+
+    @layer utilities {
+      .animate-marquee {
+        display: flex;
+        animation: marquee 18s linear infinite;
+      }
+
+      @keyframes marquee {
+        from {
+          transform: translateX(0);
+        }
+
+        to {
+          transform: translateX(-50%);
+        }
+      }
+
+      .partner-circle {
+        @apply flex items-center justify-center bg-gray-100 rounded-full shadow w-14 h-14
+        /* Mobile small */
+        md:w-24 md:h-24
+        /* Desktop large */
+        hover:shadow-lg hover:scale-105 transition duration-300;
+      }
+
+      .partner-circle img {
+        @apply h-7 md:h-12 object-contain;
+        /* Mobile small / Desktop large */
+      }
+    }
+
+    

@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>PC Dakford </title>
+    <link rel="icon" href="/Images/favicon-32x32.png" sizes="32x32">
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link rel="stylesheet" href="index.css" />
+</head>
+
+<body class="bg-gray-50 text-gray-800 font-sans leading-relaxed">
+
+    <!-- ===== HEADER ===== -->
+    <header class="bg-white/90 backdrop-blur shadow-md sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+
+            <!-- Logo -->
+            <a href="index.html" class="flex items-center space-x-2">
+                <span class="font-bold text-2xl text-blue-700">PC Dakford</span>
+            </a>
+
+            <!-- Desktop Nav -->
+            <nav class="hidden md:flex space-x-8 text-gray-700 font-medium">
+                <a href="index.html" class="hover:text-blue-600 transition">Home</a>
+                <a href="about.html" class="hover:text-blue-600 transition">About</a>
+                <a href="services.html" class="hover:text-blue-600 transition">Services</a>
+                <a href="partnerWithUs.html" class="hover:text-blue-600 transition">Partner With Us</a>
+                <a href="membership.html" class="hover:text-blue-600 transition">Membership</a>
+            </nav>
+
+            <!-- Desktop Right -->
+            <div class="hidden md:flex items-center space-x-5">
+                <span class="text-gray-600 font-medium">+1-855-775-4304</span>
+                <a onclick="callNow()" class="px-5 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition">
+                    Get In Touch
+                </a>
+            </div>
+
+            <!-- Mobile Button -->
+            <button id="menuBtn" class="md:hidden text-gray-700 focus:outline-none">
+                <svg id="menuIcon" class="h-7 w-7" fill="none" stroke="currentColor" stroke-width="2"
+                    viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+            </button>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobileMenu" class="hidden md:hidden bg-white shadow-lg">
+            <nav class="flex flex-col px-6 py-4 space-y-3 text-gray-700 font-medium">
+                <a href="index.html" class="hover:text-blue-600">Home</a>
+                <a href="about.html" class="hover:text-blue-600">About</a>
+                <a href="services.html" class="hover:text-blue-600">Services</a>
+                <a href="partnerWithUs.html" class="hover:text-blue-600">Partner With Us</a>
+                <a href="membership.html" class="hover:text-blue-600">Membership</a>
+
+                <a onclick="callNow()" class="text-blue-600 font-semibold">
+                    📞 +1-855-775-4304
+                </a>
+
+                <a onclick="callNow()"
+                    class="mt-2 px-4 py-2 bg-blue-600 text-white rounded-lg text-center hover:bg-blue-700 transition">
+                    Get In Touch
+                </a>
+            </nav>
+        </div>
+    </header>
+
+
+
+
+
+    <main>
+        <section class="max-w-6xl mx-auto px-6 py-16 space-y-10 text-gray-800">
+
+            <!-- Heading -->
+            <div class="text-center">
+                <h1 class="text-4xl font-bold mb-4">Expert Wi-Fi and Network Services</h1>
+                <p class="text-gray-600 max-w-3xl mx-auto">
+                    In today’s interconnected world, a strong and secure Wi-Fi network is no longer a luxury — it’s a
+                    necessity.
+                    From working remotely to running businesses online, stable connectivity keeps everything moving.
+                    PC Dakford ensures your network stays fast, secure, and always reliable.
+                </p>
+            </div>
+
+            <!-- Intro Images -->
+            <div class="grid md:grid-cols-2 gap-6">
+                <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=900&q=80"
+                    class="rounded-lg shadow-lg" alt="Network Setup">
+                <img src="https://images.unsplash.com/photo-1603791440384-56cd371ee9a7?auto=format&fit=crop&w=900&q=80"
+                    class="rounded-lg shadow-lg" alt="WiFi Coverage">
+            </div>
+
+            <!-- Overview -->
+            <div>
+                <h2 class="text-2xl font-bold mb-3">Overview of Our Wi-Fi & Network Services</h2>
+                <p class="text-gray-600">
+                    PC Dakford provides complete networking solutions — from new network installation to
+                    troubleshooting,
+                    optimization, and security. Our expert technicians make sure your home or office network performs
+                    smoothly without interruptions.
+                </p>
+            </div>
+
+            <!-- Services List -->
+            <div class="space-y-8">
+
+                <div>
+                    <h3 class="text-xl font-semibold mb-2">1. Network Configuration & Installation</h3>
+                    <p class="text-gray-600">
+                        Setting up routers, switches, and access points can be confusing.
+                        Our team installs and configures your entire network correctly from day one.
+                        We analyze your space, recommend the right equipment, and ensure optimal performance.
+                    </p>
+                </div>
+
+                <div>
+                    <h3 class="text-xl font-semibold mb-2">2. Wi-Fi Coverage Optimization</h3>
+                    <p class="text-gray-600">
+                        Weak signals and dead zones ruin connectivity.
+                        We perform complete Wi-Fi assessments and improve coverage by repositioning routers
+                        or adding access points — giving you strong signals everywhere.
+                    </p>
+                </div>
+
+                <div>
+                    <h3 class="text-xl font-semibold mb-2">3. Network Troubleshooting</h3>
+                    <p class="text-gray-600">
+                        Slow speeds? Connection drops? Hardware issues?
+                        Our experts quickly diagnose and fix all network problems to minimize downtime.
+                    </p>
+                </div>
+
+                <div>
+                    <h3 class="text-xl font-semibold mb-2">4. Network Security Solutions</h3>
+                    <p class="text-gray-600">
+                        Cyber threats are increasing daily.
+                        We secure your network with firewalls, encryption, and safe browsing configurations
+                        to protect your data and privacy.
+                    </p>
+                </div>
+
+                <div>
+                    <h3 class="text-xl font-semibold mb-2">5. Wireless Network Management</h3>
+                    <p class="text-gray-600">
+                        For businesses, we offer continuous network monitoring, bandwidth management,
+                        and proactive maintenance to prevent problems before they occur.
+                    </p>
+                </div>
+
+                <div>
+                    <h3 class="text-xl font-semibold mb-2">6. Upgrades & Scalability</h3>
+                    <p class="text-gray-600">
+                        As your needs grow, your network must grow too.
+                        We upgrade hardware and software to handle higher loads —
+                        perfect for expanding homes and growing businesses.
+                    </p>
+                </div>
+
+            </div>
+
+            <!-- Why Choose -->
+            <div>
+                <h2 class="text-2xl font-bold mb-3">Why Choose PC Dakford?</h2>
+                <ul class="list-disc ml-6 text-gray-600 space-y-2">
+                    <li>Experienced & certified network technicians</li>
+                    <li>Customized solutions for every environment</li>
+                    <li>Remote and on-site support options</li>
+                    <li>Transparent pricing & honest service</li>
+                    <li>Customer-first approach</li>
+                </ul>
+            </div>
+
+            <!-- Conclusion -->
+            <div class="bg-blue-600 text-white p-8 rounded-lg text-center">
+                <h3 class="text-2xl font-bold mb-3">Stay Connected Without Worries</h3>
+                <p class="text-gray-100 max-w-3xl mx-auto mb-5">
+                    Whether for home, office, or enterprise use — PC Dakford delivers
+                    powerful, secure, and seamless network solutions.
+                    Let us handle your connectivity while you focus on what matters.
+                </p>
+                <a onclick="callNow()"
+                    class="bg-white text-blue-600 px-6 py-3 rounded-full font-semibold hover:bg-gray-100 transition">
+                    Get Network Support
+                </a>
+            </div>
+
+        </section>
+
+    </main>
+
+
+
+    <footer class="bg-blue-900 text-gray-300 pt-16 pb-8 overflow-hidden">
+
+        <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-10">
+
+            <!-- Brand -->
+            <div data-aos="fade-up">
+                <h2 class="font-bold text-white text-2xl mb-4">PC Dakford</h2>
+                <p class="text-gray-400 text-sm max-w-xs">
+                    Any Device, Any Problem — We Fix It!
+                    Your trusted 24/7 technology support partner.
+                </p>
+
+                <div class="mt-5 flex space-x-4">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjAr2dd0rByz6UTQVYZQ8rz41uctOCri-I0w&s"
+                        class="h-7 rounded">
+                    <img src="https://www.malwarebytes.com/wp-content/uploads/sites/2/2017/07/google-play-protect.png?w=1240"
+                        class="h-7 rounded">
+                </div>
+            </div>
+
+            <!-- Services -->
+            <div data-aos="fade-up" data-aos-delay="150">
+                <h3 class="font-semibold text-white mb-4">Our Services</h3>
+                <ul class="space-y-2 text-gray-400 text-sm">
+                    <li><a class="hover:text-white transition" href="Computer.html">Computer</a></li>
+                    <li><a class="hover:text-white transition" href="Printer.html">Printer & Scanner</a></li>
+                    <li><a class="hover:text-white transition" href="Network.html">WiFi & Network</a></li>
+                    <li><a class="hover:text-white transition" href="SmartHome.html">Smart Home</a></li>
+                </ul>
+            </div>
+
+            <!-- Useful Links -->
+            <div data-aos="fade-up" data-aos-delay="300">
+                <h3 class="font-semibold text-white mb-4">Useful Links</h3>
+                <ul class="space-y-2 text-gray-400 text-sm">
+                    <li><a class="hover:text-white transition" href="about.html">About Us</a></li>
+                    <li><a class="hover:text-white transition" href="partner.html">Partner With Us</a></li>
+                    <li><a class="hover:text-white transition" href="membership.html">Membership</a></li>
+                    <li><a class="hover:text-white transition" href="faqs.html">FAQs</a></li>
+                    <li><a class="hover:text-white transition" href="terms.html">Terms & Privacy</a></li>
+                </ul>
+            </div>
+
+            <!-- Contact -->
+            <div data-aos="fade-up" data-aos-delay="450">
+                <h3 class="font-semibold text-white mb-4">Contact Info</h3>
+                <ul class="space-y-2 text-gray-400 text-sm">
+                    <li>📧 info@pcdakford.com</li>
+                    <li>📞 +1-855-775-4304</li>
+                    <li>📍 123 Technology Blvd, USA</li>
+                </ul>
+            </div>
+
+        </div>
+
+        <!-- Bottom Bar -->
+        <div class="border-t border-blue-800 mt-10 pt-4 text-center text-gray-400 text-xs">
+            © 2024 PC Dakford. All Rights Reserved.
+        </div>
+
+    </footer>
+
+
+
+    <!-- JavaScript for Mobile Menu Toggle -->
+    <script src="./index.js"></script>
+
+</body>
+
+</html>

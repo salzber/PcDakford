@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>PC Dakford </title>
+    <link rel="icon" href="/Images/favicon-32x32.png" sizes="32x32">
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link rel="stylesheet" href="index.css" />
+</head>
+
+<body class="bg-gray-50 text-gray-800 font-sans leading-relaxed">
+
+    <!-- ===== HEADER ===== -->
+    <!-- ===== HEADER ===== -->
+    <header class="bg-white/90 backdrop-blur shadow-md sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+
+            <!-- Logo -->
+            <a href="index.html" class="flex items-center space-x-2">
+                <span class="font-bold text-2xl text-blue-700">PC Dakford</span>
+            </a>
+
+            <!-- Desktop Nav -->
+            <nav class="hidden md:flex space-x-8 text-gray-700 font-medium">
+                <a href="index.html" class="hover:text-blue-600 transition">Home</a>
+                <a href="about.html" class="hover:text-blue-600 transition">About</a>
+                <a href="services.html" class="hover:text-blue-600 transition">Services</a>
+                <a href="partnerWithUs.html" class="hover:text-blue-600 transition">Partner With Us</a>
+                <a href="membership.html" class="hover:text-blue-600 transition">Membership</a>
+            </nav>
+
+            <!-- Desktop Right -->
+            <div class="hidden md:flex items-center space-x-5">
+                <span class="text-gray-600 font-medium">+1-855-775-4304</span>
+                <a onclick="callNow()" class="px-5 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition">
+                    Get In Touch
+                </a>
+            </div>
+
+            <!-- Mobile Button -->
+            <button id="menuBtn" class="md:hidden text-gray-700 focus:outline-none">
+                <svg id="menuIcon" class="h-7 w-7" fill="none" stroke="currentColor" stroke-width="2"
+                    viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+            </button>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobileMenu" class="hidden md:hidden bg-white shadow-lg">
+            <nav class="flex flex-col px-6 py-4 space-y-3 text-gray-700 font-medium">
+                <a href="index.html" class="hover:text-blue-600">Home</a>
+                <a href="about.html" class="hover:text-blue-600">About</a>
+                <a href="services.html" class="hover:text-blue-600">Services</a>
+                <a href="partnerWithUs.html" class="hover:text-blue-600">Partner With Us</a>
+                <a href="membership.html" class="hover:text-blue-600">Membership</a>
+
+                <a onclick="callNow()" class="text-blue-600 font-semibold">
+                    📞 +1-855-775-4304
+                </a>
+
+                <a onclick="callNow()"
+                    class="mt-2 px-4 py-2 bg-blue-600 text-white rounded-lg text-center hover:bg-blue-700 transition">
+                    Get In Touch
+                </a>
+            </nav>
+        </div>
+    </header>
+
+
+    <main>
+
+        <section class="max-w-6xl mx-auto px-6 py-16 space-y-10 text-gray-800">
+
+            <!-- Heading -->
+            <div class="text-center">
+                <h1 class="text-4xl font-bold mb-4">PC Dakford: Your Partner in Smart Home Solutions</h1>
+                <p class="text-gray-600 max-w-3xl mx-auto">
+                    Smart homes are redefining modern living by offering convenience, security,
+                    and energy efficiency at your fingertips. PC Dakford helps you transform
+                    your home into a fully connected smart environment.
+                </p>
+            </div>
+
+            <!-- Intro Images -->
+            <div class="grid md:grid-cols-2 gap-6">
+                <img src="https://s8.easternpeak.com/wp-content/uploads/2023/03/What-is-a-smart-home.png"
+                    class="rounded-lg shadow-lg" alt="Smart Home Setup">
+                <img src="https://images.unsplash.com/photo-1570129477492-45c003edd2be?auto=format&fit=crop&w=900&q=80"
+                    class="rounded-lg shadow-lg" alt="Home Automation">
+            </div>
+
+            <!-- What is Smart Home -->
+            <div>
+                <h2 class="text-2xl font-bold mb-3">What is a Smart Home?</h2>
+                <p class="text-gray-600">
+                    A smart home uses internet-connected devices that communicate with each other,
+                    allowing you to control lighting, temperature, security, and entertainment
+                    from your smartphone or central hub — anytime, anywhere.
+                </p>
+            </div>
+
+            <!-- Services -->
+            <div class="space-y-8">
+
+                <div>
+                    <h3 class="text-xl font-semibold mb-2">1. Smart Home Consultation</h3>
+                    <p class="text-gray-600">
+                        We begin by understanding your lifestyle and home environment.
+                        Our experts recommend the right smart devices and systems
+                        that fit your needs and budget.
+                    </p>
+                </div>
+
+                <div>
+                    <h3 class="text-xl font-semibold mb-2">2. Smart Device Installation</h3>
+                    <p class="text-gray-600">
+                        From smart lights and speakers to thermostats and cameras,
+                        we install and configure every device for smooth integration.
+                    </p>
+                </div>
+
+                <div>
+                    <h3 class="text-xl font-semibold mb-2">3. Home Automation Systems</h3>
+                    <p class="text-gray-600">
+                        We create customized automation setups —
+                        like dimming lights for movie time or scheduling temperature control —
+                        all managed effortlessly.
+                    </p>
+                </div>
+
+                <div>
+                    <h3 class="text-xl font-semibold mb-2">4. Smart Security Solutions</h3>
+                    <p class="text-gray-600">
+                        Secure your home with smart locks, doorbells, and surveillance cameras.
+                        Monitor and control everything remotely with real-time alerts.
+                    </p>
+                </div>
+
+                <div>
+                    <h3 class="text-xl font-semibold mb-2">5. Energy Management</h3>
+                    <p class="text-gray-600">
+                        Reduce energy costs using smart thermostats and lighting.
+                        Track usage and optimize efficiency with intelligent control systems.
+                    </p>
+                </div>
+
+                <div>
+                    <h3 class="text-xl font-semibold mb-2">6. Device Integration & Compatibility</h3>
+                    <p class="text-gray-600">
+                        We integrate multiple smart devices into one unified system,
+                        ensuring everything works seamlessly from a single app.
+                    </p>
+                </div>
+
+            </div>
+
+            <!-- Why Choose -->
+            <div>
+                <h2 class="text-2xl font-bold mb-3">Why Choose PC Dakford?</h2>
+                <ul class="list-disc ml-6 text-gray-600 space-y-2">
+                    <li>Expert smart home specialists</li>
+                    <li>Customized solutions for every home</li>
+                    <li>Professional installation & setup</li>
+                    <li>Ongoing maintenance & support</li>
+                    <li>Affordable smart home packages</li>
+                </ul>
+            </div>
+
+            <!-- Conclusion -->
+            <div class="bg-blue-600 text-white p-8 rounded-lg text-center">
+                <h3 class="text-2xl font-bold mb-3">Upgrade to Smart Living Today</h3>
+                <p class="text-gray-100 max-w-3xl mx-auto mb-5">
+                    Enjoy comfort, security, and efficiency with PC Dakford’s smart home solutions.
+                    Let us turn your house into a truly intelligent home.
+                </p>
+                <a onclick="callNow()"
+                    class="bg-white text-blue-600 px-6 py-3 rounded-full font-semibold hover:bg-gray-100 transition">
+                    Get Smart Home Support
+                </a>
+            </div>
+
+        </section>
+
+    </main>
+
+
+
+
+
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="bg-blue-900 text-gray-300 pt-16 pb-8 overflow-hidden">
+
+        <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-10">
+
+            <!-- Brand -->
+            <div data-aos="fade-up">
+                <h2 class="font-bold text-white text-2xl mb-4">PC Dakford</h2>
+                <p class="text-gray-400 text-sm max-w-xs">
+                    Any Device, Any Problem — We Fix It!
+                    Your trusted 24/7 technology support partner.
+                </p>
+
+                <div class="mt-5 flex space-x-4">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjAr2dd0rByz6UTQVYZQ8rz41uctOCri-I0w&s"
+                        class="h-7 rounded">
+                    <img src="https://www.malwarebytes.com/wp-content/uploads/sites/2/2017/07/google-play-protect.png?w=1240"
+                        class="h-7 rounded">
+                </div>
+            </div>
+
+            <!-- Services -->
+            <div data-aos="fade-up" data-aos-delay="150">
+                <h3 class="font-semibold text-white mb-4">Our Services</h3>
+                <ul class="space-y-2 text-gray-400 text-sm">
+                    <li><a class="hover:text-white transition" href="Computer.html">Computer</a></li>
+                    <li><a class="hover:text-white transition" href="Printer.html">Printer & Scanner</a></li>
+                    <li><a class="hover:text-white transition" href="Network.html">WiFi & Network</a></li>
+                    <li><a class="hover:text-white transition" href="SmartHome.html">Smart Home</a></li>
+                </ul>
+            </div>
+
+            <!-- Useful Links -->
+            <div data-aos="fade-up" data-aos-delay="300">
+                <h3 class="font-semibold text-white mb-4">Useful Links</h3>
+                <ul class="space-y-2 text-gray-400 text-sm">
+                    <li><a class="hover:text-white transition" href="about.html">About Us</a></li>
+                    <li><a class="hover:text-white transition" href="partner.html">Partner With Us</a></li>
+                    <li><a class="hover:text-white transition" href="membership.html">Membership</a></li>
+                    <li><a class="hover:text-white transition" href="faqs.html">FAQs</a></li>
+                    <li><a class="hover:text-white transition" href="terms.html">Terms & Privacy</a></li>
+                </ul>
+            </div>
+
+            <!-- Contact -->
+            <div data-aos="fade-up" data-aos-delay="450">
+                <h3 class="font-semibold text-white mb-4">Contact Info</h3>
+                <ul class="space-y-2 text-gray-400 text-sm">
+                    <li>📧 info@pcdakford.com</li>
+                    <li>📞 +1-855-775-4304</li>
+                    <li>📍 123 Technology Blvd, USA</li>
+                </ul>
+            </div>
+
+        </div>
+
+        <!-- Bottom Bar -->
+        <div class="border-t border-blue-800 mt-10 pt-4 text-center text-gray-400 text-xs">
+            © 2024 PC Dakford. All Rights Reserved.
+        </div>
+
+    </footer>
+
+
+
+    <!-- JavaScript for Mobile Menu Toggle -->
+    <script src="./index.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,713 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>PC Dakford </title>
+  <link rel="icon" href="/Images/favicon-32x32.png" sizes="32x32">
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <link rel="stylesheet" href="index.css">
+</head>
+
+<body class="bg-gray-50 text-gray-800 font-sans leading-relaxed">
+
+  <!-- ===== HEADER ===== -->
+  <header class="bg-white/90 backdrop-blur shadow-md sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+
+      <!-- Logo -->
+      <a href="index.html" class="flex items-center space-x-2">
+        <span class="font-bold text-2xl text-blue-700">PC Dakford</span>
+      </a>
+
+      <!-- Desktop Nav -->
+      <nav class="hidden md:flex space-x-8 text-gray-700 font-medium">
+        <a href="index.html" class="hover:text-blue-600 transition">Home</a>
+        <a href="about.html" class="hover:text-blue-600 transition">About</a>
+        <a href="services.html" class="hover:text-blue-600 transition">Services</a>
+        <a href="partnerWithUs.html" class="hover:text-blue-600 transition">Partner With Us</a>
+        <a href="membership.html" class="hover:text-blue-600 transition">Membership</a>
+      </nav>
+
+      <!-- Desktop Right -->
+      <div class="hidden md:flex items-center space-x-5">
+        <span class="text-gray-600 font-medium">+1-855-775-4304</span>
+        <a onclick="callNow()" class="px-5 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition">
+          Get In Touch
+        </a>
+      </div>
+
+      <!-- Mobile Button -->
+      <button id="menuBtn" class="md:hidden text-gray-700 focus:outline-none">
+        <svg id="menuIcon" class="h-7 w-7" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobileMenu" class="hidden md:hidden bg-white shadow-lg">
+      <nav class="flex flex-col px-6 py-4 space-y-3 text-gray-700 font-medium">
+        <a href="index.html" class="hover:text-blue-600">Home</a>
+        <a href="about.html" class="hover:text-blue-600">About</a>
+        <a href="services.html" class="hover:text-blue-600">Services</a>
+        <a href="partnerWithUs.html" class="hover:text-blue-600">Partner With Us</a>
+        <a href="membership.html" class="hover:text-blue-600">Membership</a>
+
+        <a onclick="callNow()" class="text-blue-600 font-semibold">
+          📞 +1-855-775-4304
+        </a>
+
+        <a onclick="callNow()"
+          class="mt-2 px-4 py-2 bg-blue-600 text-white rounded-lg text-center hover:bg-blue-700 transition">
+          Get In Touch
+        </a>
+      </nav>
+    </div>
+  </header>
+
+
+  <!-- ===== HERO CAROUSEL ===== -->
+  <section id="home" class="relative overflow-hidden h-[420px] overflow-hidden">
+
+    <!-- Slides Wrapper -->
+    <div id="carousel" class="flex transition-transform duration-700 ease-in-out">
+
+      <!-- Slide 1 -->
+      <div class="min-w-full h-[420px] bg-cover bg-center"
+        style="background-image:url('https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=1470&q=80');">
+        <div class="h-full w-full bg-black/60 flex flex-col justify-center items-center text-center px-6">
+          <h1 class="text-white text-4xl md:text-5xl font-bold mb-3">Assistance</h1>
+          <p class="text-gray-200 max-w-3xl">
+            Professional computer assistance for all your technical needs.
+          </p>
+        </div>
+      </div>
+
+      <!-- Slide 2 -->
+      <div class="min-w-full h-[420px] bg-cover bg-center"
+        style="background-image:url('https://images.unsplash.com/photo-1527443154391-507e9dc6c5cc?auto=format&fit=crop&w=1470&q=80');">
+        <div class="h-full w-full bg-black/60 flex flex-col justify-center items-center text-center px-6">
+          <h1 class="text-white text-4xl md:text-5xl font-bold mb-3">IT Support</h1>
+          <p class="text-gray-200 max-w-3xl">
+            Certified experts ready to solve your hardware & software problems.
+          </p>
+        </div>
+      </div>
+
+      <!-- Slide 3 -->
+      <div class="min-w-full h-[420px] bg-cover bg-center"
+        style="background-image:url('https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1470&q=80');">
+        <div class="h-full w-full bg-black/60 flex flex-col justify-center items-center text-center px-6">
+          <h1 class="text-white text-4xl md:text-5xl font-bold mb-3">PC Repair</h1>
+          <p class="text-gray-200 max-w-3xl">
+            Fast, reliable, and affordable PC repair services.
+          </p>
+        </div>
+      </div>
+
+      <!-- Slide 4 -->
+      <div class="min-w-full h-[420px] bg-cover bg-center"
+        style="background-image:url('https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=1470&q=80');">
+        <div class="h-full w-full bg-black/60 flex flex-col justify-center items-center text-center px-6">
+          <h1 class="text-white text-4xl md:text-5xl font-bold mb-3">Network Setup</h1>
+          <p class="text-gray-200 max-w-3xl">
+            Secure and optimized network setup for your business.
+          </p>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Left Arrow -->
+    <button onclick="prevSlide()"
+      class="absolute left-4 top-1/2 -translate-y-1/2 bg-white/70 hover:bg-white text-gray-800 p-3 rounded-full shadow">
+      ❮
+    </button>
+
+    <!-- Right Arrow -->
+    <button onclick="nextSlide()"
+      class="absolute right-4 top-1/2 -translate-y-1/2 bg-white/70 hover:bg-white text-gray-800 p-3 rounded-full shadow">
+      ❯
+    </button>
+
+  </section>
+
+
+
+
+  <!-- ===== SERVICES SECTION ===== -->
+  <section id="services" class="bg-gray-50 py-20 overflow-hidden">
+    <div class="max-w-7xl mx-auto px-6">
+
+      <!-- Heading -->
+      <h2 class="text-3xl md:text-4xl font-bold text-center mb-6" data-aos="fade-up">
+        Complete Device Assistance Personalized for You!
+      </h2>
+
+      <p class="text-center text-gray-600 mb-14 max-w-3xl mx-auto" data-aos="fade-up" data-aos-delay="100">
+        From laptops to smartphones, printers to smart home devices —
+        we provide reliable assistance for all your gadgets.
+      </p>
+
+      <!-- Cards Grid -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-10">
+
+        <!-- Card 1 -->
+        <div data-aos="zoom-in" data-aos-delay="300" class="bg-white rounded-2xl shadow-lg p-6 text-center 
+               hover:-translate-y-3 hover:shadow-2xl 
+               transition duration-300 group">
+
+          <img src="./Images/desk-top-1.jpg" class="h-24 mx-auto mb-4 group-hover:scale-110 transition duration-300"
+            alt="Computer" />
+
+          <h3 class="font-semibold text-xl mb-2">Computer</h3>
+          <p class="text-gray-600 mb-4 text-sm">
+            Full setup, repairs for desktops & laptops.
+          </p>
+
+          <a href="Computer.html" class="mt-auto px-6 py-2 border border-blue-600 text-blue-600 rounded-full 
+                 hover:bg-blue-600 hover:text-white transition">
+            Read More
+          </a>
+        </div>
+
+        <!-- Card 2 -->
+        <div data-aos="zoom-in" data-aos-delay="600" class="bg-white rounded-2xl shadow-lg p-6 text-center 
+               hover:-translate-y-3 hover:shadow-2xl 
+               transition duration-300 group">
+
+          <img src="./Images/printer-top.png" class="h-24 mx-auto mb-4 group-hover:scale-110 transition duration-300"
+            alt="Printer" />
+
+          <h3 class="font-semibold text-xl mb-2">Printer & Scanner</h3>
+          <p class="text-gray-600 mb-4 text-sm">
+            Printer setup, scanner configuration, and error fixing support.
+          </p>
+
+          <a href="PrinterAndScanner.html" class="mt-auto px-6 py-2 border border-blue-600 text-blue-600 rounded-full 
+                 hover:bg-blue-600 hover:text-white transition">
+            Read More
+          </a>
+        </div>
+
+        <!-- Card 3 -->
+        <div data-aos="zoom-in" data-aos-delay="800" class="bg-white rounded-2xl shadow-lg p-6 text-center 
+               hover:-translate-y-3 hover:shadow-2xl 
+               transition duration-300 group">
+
+          <img src="./Images/wifi-top-1.jpg" class="h-24 mx-auto mb-4 group-hover:scale-110 transition duration-300"
+            alt="Network" />
+
+          <h3 class="font-semibold text-xl mb-2">WiFi & Network</h3>
+          <p class="text-gray-600 mb-4 text-sm">
+            Secure WiFi setup, optimization, and network troubleshooting.
+          </p>
+
+          <a href="WiFiAndNetwork.html" class="mt-auto px-6 py-2 border border-blue-600 text-blue-600 rounded-full 
+                 hover:bg-blue-600 hover:text-white transition">
+            Read More
+        </a>
+        </div>
+
+        <!-- Card 4 -->
+        <div data-aos="zoom-in" data-aos-delay="1000" class="bg-white rounded-2xl shadow-lg p-6 text-center 
+               hover:-translate-y-3 hover:shadow-2xl 
+               transition duration-300 group">
+
+          <img src="./Images/speker-top-1.jpg" class="h-24 mx-auto mb-4 group-hover:scale-110 transition duration-300"
+            alt="Smart Home" />
+
+          <h3 class="font-semibold text-xl mb-2">Smart Home</h3>
+          <p class="text-gray-600 mb-4 text-sm">
+            Smart device integration, setup, and home automation support.
+          </p>
+
+          <a href="SmartHome.html" class="mt-auto px-6 py-2 border border-blue-600 text-blue-600 rounded-full 
+                 hover:bg-blue-600 hover:text-white transition">
+            Read More
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ===== ASSIST SECTION ===== -->
+  <section class="bg-gradient-to-b from-white to-blue-50 py-20 overflow-hidden">
+    <div class="max-w-7xl mx-auto px-6 text-center">
+
+      <!-- Heading -->
+      <h2 class="text-3xl md:text-4xl font-bold mb-6" data-aos="fade-up">
+        How Can We Assist You Today?
+      </h2>
+
+      <p class="max-w-3xl mx-auto text-gray-600 mb-14" data-aos="fade-up" data-aos-delay="300">
+        Technology should enhance everyday life. We provide end-to-end tech services —
+        from installations to troubleshooting and expert support wherever you are.
+      </p>
+
+      <!-- Icons Grid -->
+      <div class="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 gap-8 justify-items-center">
+
+        <!-- Item 1 -->
+        <div data-aos="zoom-in" data-aos-delay="1000" class="group flex flex-col items-center">
+
+          <div class="w-24 h-24 rounded-full bg-white shadow-lg flex items-center justify-center
+                    group-hover:shadow-blue-400/50 group-hover:scale-110 
+                    transition duration-300">
+            <img src="./Images/1.png"
+              class="h-[75px] transition-all duration-500 ease-out transform-gpu will-change-transform group-hover:h-[85px] group-hover:rotate-[-8deg] group-hover:scale-110 cursor-pointer">
+          </div>
+          <span class="mt-3 text-sm font-medium text-gray-700">Computer</span>
+        </div>
+
+        <!-- Item 2 -->
+        <div data-aos="zoom-in" data-aos-delay="1200" class="group flex flex-col items-center">
+
+          <div class="w-24 h-24 rounded-full bg-white shadow-lg flex items-center justify-center
+                    group-hover:shadow-blue-400/50 group-hover:scale-110 
+                    transition duration-300">
+            <img src="./Images/2.png"
+              class="h-[75px] transition-all duration-500 ease-out transform-gpu will-change-transform group-hover:h-[85px] group-hover:rotate-[-8deg] group-hover:scale-110 cursor-pointer">
+          </div>
+          <span class="mt-3 text-sm font-medium text-gray-700">Printer / Scanner</span>
+        </div>
+
+        <!-- Item 3 -->
+        <div data-aos="zoom-in" data-aos-delay="1400" class="group flex flex-col items-center">
+
+          <div class="w-24 h-24 rounded-full bg-white shadow-lg flex items-center justify-center
+                    group-hover:shadow-blue-400/50 group-hover:scale-110 
+                    transition duration-300">
+            <img src="./Images/3.png"
+              class="h-[75px] transition-all duration-500 ease-out transform-gpu will-change-transform group-hover:h-[85px] group-hover:rotate-[-8deg] group-hover:scale-110 cursor-pointer">
+          </div>
+          <span class="mt-3 text-sm font-medium text-gray-700">WiFi & Network</span>
+        </div>
+
+        <!-- Item 4 -->
+        <div data-aos="zoom-in" data-aos-delay="1600" class="group flex flex-col items-center">
+
+          <div class="w-24 h-24 rounded-full bg-white shadow-lg flex items-center justify-center
+                    group-hover:shadow-blue-400/50 group-hover:scale-110 
+                    transition duration-300">
+            <img src="./Images/4.png"
+              class="h-[75px] transition-all duration-500 ease-out transform-gpu will-change-transform group-hover:h-[85px] group-hover:rotate-[-8deg] group-hover:scale-110 cursor-pointer">
+          </div>
+          <span class="mt-3 text-sm font-medium text-gray-700">Email</span>
+        </div>
+
+        <!-- Item 5 -->
+        <div data-aos="zoom-in" data-aos-delay="1800" class="group flex flex-col items-center">
+
+          <div class="w-24 h-24 rounded-full bg-white shadow-lg flex items-center justify-center
+                    group-hover:shadow-blue-400/50 group-hover:scale-110 
+                    transition duration-300">
+            <img src="./Images/5.png"
+              class="h-[75px] transition-all duration-500 ease-out transform-gpu will-change-transform group-hover:h-[85px] group-hover:rotate-[-8deg] group-hover:scale-110 cursor-pointer">
+          </div>
+          <span class="mt-3 text-sm font-medium text-gray-700">App / Mac</span>
+        </div>
+
+        <!-- Item 6 -->
+        <div data-aos="zoom-in" data-aos-delay="2000" class="group flex flex-col items-center">
+
+          <div class="w-24 h-24 rounded-full bg-white shadow-lg flex items-center justify-center
+                    group-hover:shadow-blue-400/50 group-hover:scale-110 
+                    transition duration-300">
+            <img src="./Images/6.png"
+              class="h-[75px] transition-all duration-500 ease-out transform-gpu will-change-transform group-hover:h-[85px] group-hover:rotate-[-8deg] group-hover:scale-110 cursor-pointer">
+          </div>
+          <span class="mt-3 text-sm font-medium text-gray-700">Mobile & Tablet</span>
+        </div>
+
+        <!-- Item 7 -->
+        <div data-aos="zoom-in" data-aos-delay="2200" class="group flex flex-col items-center">
+
+          <div class="w-24 h-24 rounded-full bg-white shadow-lg flex items-center justify-center
+                    group-hover:shadow-blue-400/50 group-hover:scale-110 
+                    transition duration-300">
+            <img src="./Images/7.png"
+              class="h-[75px] transition-all duration-500 ease-out transform-gpu will-change-transform group-hover:h-[85px] group-hover:rotate-[-8deg] group-hover:scale-110 cursor-pointer">
+          </div>
+          <span class="mt-3 text-sm font-medium text-gray-700">Audio & Smart</span>
+        </div>
+
+        <!-- Item 8 -->
+        <div data-aos="zoom-in" data-aos-delay="2400" class="group flex flex-col items-center">
+
+          <div class="w-24 h-24 rounded-full bg-white shadow-lg flex items-center justify-center
+                    group-hover:shadow-blue-400/50 group-hover:scale-110 
+                    transition duration-300">
+            <img src="./Images/8.png"
+              class="h-[75px] transition-all duration-500 ease-out transform-gpu will-change-transform group-hover:h-[85px] group-hover:rotate-[-8deg] group-hover:scale-110 cursor-pointer">
+          </div>
+          <span class="mt-3 text-sm font-medium text-gray-700">TV / Streaming</span>
+        </div>
+
+        <!-- Item 9 -->
+        <div data-aos="zoom-in" data-aos-delay="2600" class="group flex flex-col items-center">
+
+          <div class="w-24 h-24 rounded-full bg-white shadow-lg flex items-center justify-center
+                    group-hover:shadow-blue-400/50 group-hover:scale-110 
+                    transition duration-300">
+            <img src="./Images/9.png"
+              class="h-[75px] transition-all duration-500 ease-out transform-gpu will-change-transform group-hover:h-[85px] group-hover:rotate-[-8deg] group-hover:scale-110 cursor-pointer">
+          </div>
+          <span class="mt-3 text-sm font-medium text-gray-700">Home Security</span>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CERTIFICATION SECTION ===== -->
+  <section class="bg-white py-16 overflow-hidden">
+    <div class="max-w-7xl mx-auto px-6">
+
+      <div class="flex flex-col md:flex-row items-center justify-between gap-10">
+
+        <!-- Certification Logo -->
+        <div data-aos="fade-right">
+          <img src="./Images/comptia.png" alt="CompTIA A+ Certified" class="h-24 mx-auto md:mx-0 drop-shadow-lg">
+        </div>
+
+        <!-- Text -->
+        <div data-aos="fade-up" data-aos-delay="200" class="text-center md:text-left max-w-xl">
+          <h3 class="text-2xl font-bold mb-3">
+            CompTIA A+ Certified Professionals
+          </h3>
+          <p class="text-gray-600">
+            CompTIA A+ is a globally recognized certification that demonstrates
+            professional expertise in computer servicing and technical support.
+          </p>
+        </div>
+
+        <!-- Video Card -->
+        <div data-aos="fade-left" data-aos-delay="400">
+
+          <video src="./Images/video-final.mkv" class="w-96 h-64 rounded-xl" autoplay loop muted playsinline>
+
+          </video>
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <!-- ===== WORK PROCESS SECTION ===== -->
+  <section class="bg-gradient-to-b from-white to-blue-50 py-20 overflow-hidden" id="work-process">
+    <div class="max-w-7xl mx-auto px-6">
+
+      <!-- Heading -->
+      <div class="text-center mb-12" data-aos="fade-up" data-aos-delay="100">
+        <h2 class="text-3xl md:text-4xl font-bold mb-4">Our Work Process</h2>
+        <p class="text-gray-600 max-w-3xl mx-auto" data-aos="fade-down" data-aos-delay="200">  >
+          We begin with a consultative session to fully understand your needs
+          and deliver customized solutions.
+        </p>
+      </div>
+      <div class="flex gap-3 mb-12 overflow-x-auto no-scrollbar 
+            md:flex-wrap md:justify-center 
+            px-1">
+
+        <button onclick="showStep(1)" data-aos="fade-left" data-aos-delay="200" class="whitespace-nowrap 
+           px-4 py-2 text-sm 
+           md:px-6 md:py-3 md:text-base
+           rounded-lg border border-blue-600 
+           font-medium bg-white 
+           hover:bg-blue-600 hover:text-white 
+           transition-all duration-300 
+           bg-blue-600  shadow-lg  text-blue-600">
+          1. Free Consultation
+        </button>
+
+        <button onclick="showStep(2)"  class="whitespace-nowrap data
+           px-4 py-2 text-sm 
+           md:px-6 md:py-3 md:text-base
+           rounded-lg border border-blue-600 
+           text-blue-600 font-medium bg-white 
+           hover:bg-blue-600 hover:text-white 
+           transition-all duration-300" data-aos="fade-left" data-aos-delay="400">  
+          2. Evaluation & Scheduling
+        </button>
+
+        <button onclick="showStep(3)" class="whitespace-nowrap 
+           px-4 py-2 text-sm 
+           md:px-6 md:py-3 md:text-base
+           rounded-lg border border-blue-600 
+           text-blue-600 font-medium bg-white 
+           hover:bg-blue-600 hover:text-white 
+           transition-all duration-300" data-aos="fade-left" data-aos-delay="600">
+          3. Execution
+        </button>
+
+        <button onclick="showStep(4)" class="whitespace-nowrap 
+           px-4 py-2 text-sm 
+           md:px-6 md:py-3 md:text-base
+           rounded-lg border border-blue-600 
+           text-blue-600 font-medium bg-white 
+           hover:bg-blue-600 hover:text-white 
+           transition-all duration-300" data-aos="fade-left" data-aos-delay="800">
+          4. Continued Guidance
+        </button>
+
+      </div>
+
+      <!-- Content -->
+      <div class="grid md:grid-cols-2 gap-12 items-center">
+
+        <!-- Left -->
+        <div id="stepContentArea">
+
+          <div class="step-content" data-aos="slide-up" data-aos-delay="200"> 
+            <h3 class="text-2xl font-semibold mb-3">Free Consultation</h3>
+            <p class="text-gray-600 mb-4">
+              We begin with a free consultation to understand your technical requirements.
+            </p>
+            <ul class="list-disc ml-6 text-gray-600 space-y-2">
+              <li>Understand customer requirements</li>
+              <li>Initial problem assessment</li>
+              <li>Expert recommendations</li>
+            </ul>
+          </div>
+
+        </div>
+
+        <!-- Right Image -->
+        <div>
+          <img data-aos="slide-up" data-aos-delay="200" id="stepImage" class="rounded-xl shadow-xl w-full transition-all duration-500"
+            src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=800&q=80">
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SUPPORT CTA SECTION ===== -->
+  <section class="relative overflow-hidden py-20 bg-white">
+
+    <!-- Soft Background Glow -->
+    <div class="absolute -top-20 -left-20 w-72 h-72 bg-blue-400 rounded-full blur-3xl opacity-20"></div>
+    <div class="absolute -bottom-20 -right-20 w-72 h-72 bg-cyan-400 rounded-full blur-3xl opacity-20"></div>
+
+    <div class="max-w-4xl mx-auto px-6 text-center relative">
+
+      <!-- Glass Card -->
+      <div class="bg-white/80 backdrop-blur rounded-2xl shadow-xl px-8 py-12" data-aos="fade-up" data-aos-delay="500">
+
+        <h2 class="text-xl md:text-4xl font-bold mb-5">
+          On-Site & Remote Support for Your Printer, WiFi, and Smart Devices
+        </h2>
+
+        <p class="text-gray-600 mb-8 text-base text-md md:text-lg">
+          At PC Dakford, we provide professional on-site and remote troubleshooting
+          for printers, WiFi networks, and smart devices — ensuring smooth daily operations.
+        </p>
+
+        <button class="px-8 py-3 rounded-full bg-blue-600 text-white font-medium
+               hover:bg-blue-700 hover:shadow-lg hover:-translate-y-0.5
+               transition-all duration-300">
+          Contact Us
+        </button>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== TESTIMONIALS ===== -->
+  <section class="py-20 bg-gray-50 overflow-hidden">
+    <div class="max-w-6xl mx-auto px-6">
+
+      <!-- Heading -->
+      <h2 class="text-3xl md:text-4xl text-center font-bold mb-14">
+        What Our Clients Say!
+      </h2>
+
+      <!-- Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+
+        <!-- Card -->
+        <div data-aos="fade-up" data-aos-delay="100" class="bg-white p-6 rounded-xl shadow 
+                  hover:-translate-y-1 hover:shadow-xl transition-all duration-300">
+          <div class="flex items-center space-x-3 mb-2">
+            <div class="h-11 w-11 rounded-full bg-blue-600 flex items-center justify-center text-white font-bold">M
+            </div>
+            <h3 class="font-semibold">mredible</h3>
+          </div>
+          <div class="text-yellow-400 text-sm mb-3">★★★★★</div>
+          <p class="text-gray-600 text-sm mb-3">
+            PC Dakford was responsive, professional, and fixed my problem quickly and effectively.
+          </p>
+          <a href="#" class="text-blue-600 text-xs hover:underline">View on Google</a>
+        </div>
+
+        <div data-aos="fade-up" data-aos-delay="200" class="bg-white p-6 rounded-xl shadow 
+                  hover:-translate-y-1 hover:shadow-xl transition-all duration-300">
+          <div class="flex items-center space-x-3 mb-2">
+            <div class="h-11 w-11 rounded-full bg-blue-600 flex items-center justify-center text-white font-bold">D
+            </div>
+            <h3 class="font-semibold">David Glovan</h3>
+          </div>
+          <div class="text-yellow-400 text-sm mb-3">★★★★★</div>
+          <p class="text-gray-600 text-sm mb-3">
+            Sending my setup and repair for my small office saved time & money.
+          </p>
+          <a href="#" class="text-blue-600 text-xs hover:underline">View on Google</a>
+        </div>
+
+        <div data-aos="fade-up" data-aos-delay="300" class="bg-white p-6 rounded-xl shadow 
+                  hover:-translate-y-1 hover:shadow-xl transition-all duration-300">
+          <div class="flex items-center space-x-3 mb-2">
+            <div class="h-11 w-11 rounded-full bg-blue-600 flex items-center justify-center text-white font-bold">J
+            </div>
+            <h3 class="font-semibold">Jorge Guzman</h3>
+          </div>
+          <div class="text-yellow-400 text-sm mb-3">★★★★★</div>
+          <p class="text-gray-600 text-sm mb-3">
+            They solve all my issues on the first visit. Very professional.
+          </p>
+          <a href="#" class="text-blue-600 text-xs hover:underline">View on Google</a>
+        </div>
+
+        <!-- Wide Cards -->
+        <div data-aos="fade-up" data-aos-delay="400" class="bg-white p-6 rounded-xl shadow md:col-span-3
+                  hover:-translate-y-1 hover:shadow-xl transition-all duration-300">
+          <div class="flex items-center space-x-3 mb-2">
+            <div class="h-11 w-11 rounded-full bg-blue-600 flex items-center justify-center text-white font-bold">Y
+            </div>
+            <h3 class="font-semibold">Yasir Khan</h3>
+          </div>
+          <div class="text-yellow-400 text-sm mb-3">★★★★★</div>
+          <p class="text-gray-600 text-sm mb-3 max-w-4xl">
+            Amazing service by PC Dakford! The tech was professional, friendly, and knowledgeable.
+          </p>
+          <a href="#" class="text-blue-600 text-xs hover:underline">View on Google</a>
+        </div>
+
+        <div data-aos="fade-up" data-aos-delay="500" class="bg-white p-6 rounded-xl shadow md:col-span-3
+                  hover:-translate-y-1 hover:shadow-xl transition-all duration-300">
+          <div class="flex items-center space-x-3 mb-2">
+            <div class="h-11 w-11 rounded-full bg-blue-600 flex items-center justify-center text-white font-bold">D
+            </div>
+            <h3 class="font-semibold">Darren Skinner</h3>
+          </div>
+          <div class="text-yellow-400 text-sm mb-3">★★★★★</div>
+          <p class="text-gray-600 text-sm mb-3 max-w-4xl">
+            Great support and knowledgeable staff. Efficient and trustworthy.
+          </p>
+          <a href="#" class="text-blue-600 text-xs hover:underline">View on Google</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <!-- ===== PARTNERS SECTION ===== -->
+  <section class="bg-white py-14 overflow-hidden">
+
+    <h2 class="font-bold text-2xl text-center mb-10" data-aos="fade-up" data-aos-delay="800">
+      Our Partners
+    </h2>
+
+    <!-- Marquee Wrapper -->
+    <div class="overflow-hidden relative" data-aos="fade-up" data-aos-delay="1500">
+
+      <!-- Moving Track -->
+      <div class="flex w-max animate-marquee gap-6 md:gap-10">
+
+        <!-- Repeat twice for infinite loop -->
+        <div class="flex gap-6 md:gap-10">
+          <div class="partner-circle"><img src="./Images/p1.png"></div>
+          <div class="partner-circle"><img src="./Images/p2.png"></div>
+          <div class="partner-circle"><img src="./Images/p3.png"></div>
+          <div class="partner-circle"><img src="./Images/p4.png"></div>
+          <div class="partner-circle"><img src="./Images/p5.png"></div>
+        </div>
+
+        <div class="flex gap-6 md:gap-10">
+          <div class="partner-circle"><img src="./Images/p1.png"></div>
+          <div class="partner-circle"><img src="./Images/p2.png"></div>
+          <div class="partner-circle"><img src="./Images/p3.png"></div>
+          <div class="partner-circle"><img src="./Images/p4.png"></div>
+          <div class="partner-circle"><img src="./Images/p5.png"></div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <!-- ===== FOOTER ===== -->
+  <footer class="bg-blue-900 text-gray-300 pt-16 pb-8 overflow-hidden">
+
+    <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-10">
+
+      <!-- Brand -->
+      <div data-aos="fade-up">
+        <h2 class="font-bold text-white text-2xl mb-4">PC Dakford</h2>
+        <p class="text-gray-400 text-sm max-w-xs">
+          Any Device, Any Problem — We Fix It!
+          Your trusted 24/7 technology support partner.
+        </p>
+
+        <div class="mt-5 flex space-x-4">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjAr2dd0rByz6UTQVYZQ8rz41uctOCri-I0w&s"
+            class="h-7 rounded">
+          <img src="https://www.malwarebytes.com/wp-content/uploads/sites/2/2017/07/google-play-protect.png?w=1240"
+            class="h-7 rounded">
+        </div>
+      </div>
+
+      <!-- Services -->
+      <div data-aos="fade-up" data-aos-delay="150">
+        <h3 class="font-semibold text-white mb-4">Our Services</h3>
+        <ul class="space-y-2 text-gray-400 text-sm">
+          <li><a class="hover:text-white transition" href="Computer.html">Computer</a></li>
+          <li><a class="hover:text-white transition" href="Printer.html">Printer & Scanner</a></li>
+          <li><a class="hover:text-white transition" href="Network.html">WiFi & Network</a></li>
+          <li><a class="hover:text-white transition" href="SmartHome.html">Smart Home</a></li>
+        </ul>
+      </div>
+
+      <!-- Useful Links -->
+      <div data-aos="fade-up" data-aos-delay="300">
+        <h3 class="font-semibold text-white mb-4">Useful Links</h3>
+        <ul class="space-y-2 text-gray-400 text-sm">
+          <li><a class="hover:text-white transition" href="about.html">About Us</a></li>
+          <li><a class="hover:text-white transition" href="partner.html">Partner With Us</a></li>
+          <li><a class="hover:text-white transition" href="membership.html">Membership</a></li>
+          <li><a class="hover:text-white transition" href="faqs.html">FAQs</a></li>
+          <li><a class="hover:text-white transition" href="terms.html">Terms & Privacy</a></li>
+        </ul>
+      </div>
+
+      <!-- Contact -->
+      <div data-aos="fade-up" data-aos-delay="450">
+        <h3 class="font-semibold text-white mb-4">Contact Info</h3>
+        <ul class="space-y-2 text-gray-400 text-sm">
+          <li>📧 info@pcdakford.com</li>
+          <li>📞 +1-855-775-4304</li>
+          <li>📍 123 Technology Blvd, USA</li>
+        </ul>
+      </div>
+
+    </div>
+
+    <!-- Bottom Bar -->
+    <div class="border-t border-blue-800 mt-10 pt-4 text-center text-gray-400 text-xs">
+      © 2024 PC Dakford. All Rights Reserved.
+    </div>
+
+  </footer>
+
+
+  <!-- JavaScript for Mobile Menu Toggle -->
+  <script src="./index.js"></script>
+
+</body>
+
+</html>
