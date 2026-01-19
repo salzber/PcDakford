@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Installation Error | Flowjet</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100 text-gray-800">
+
+  <!-- ================= TOP NAV ================= -->
+  <header class="bg-white border-b">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex gap-8 text-sm font-medium">
+      <a href="#">OfficeJet</a>
+      <a href="#">DeskJet</a>
+      <a href="#">ENVY</a>
+      <a href="#">LaserJet</a>
+    </div>
+  </header>
+
+  <!-- ================= LOADER ================= -->
+  <div id="loader" class="flex items-center justify-center py-40">
+    <div class="flex flex-col items-center">
+      <div class="w-16 h-16 border-4 border-blue-600 border-t-transparent rounded-full animate-spin"></div>
+      <p class="mt-4 text-gray-600 font-medium">
+        Installing printer drivers...
+      </p>
+    </div>
+  </div>
+
+  <!-- ================= ERROR CONTENT (HIDDEN INITIALLY) ================= -->
+  <section id="errorContent" class="hidden flex justify-center items-center py-20 px-4">
+    <div class="bg-white w-full max-w-2xl border rounded-lg shadow-lg overflow-hidden">
+
+      <!-- HEADER -->
+      <div class="bg-gray-200 px-6 py-4 flex justify-between items-center">
+        <div>
+          <h2 class="font-semibold">Installing</h2>
+          <p class="text-sm text-gray-600">
+            Fatal error occurred during installation..
+          </p>
+        </div>
+        <!-- <img src="https://upload.wikimedia.org/wikipedia/commons/a/ad/HP_logo_2012.svg" class="h-8" /> -->
+      </div>
+
+      <!-- BODY -->
+      <div class="px-8 py-10 text-center">
+
+        <!-- ERROR ICON -->
+        <div class="flex justify-center mb-6">
+          <div class="w-24 h-24 border-4 border-red-500 rounded-full flex items-center justify-center">
+            <span class="text-red-600 font-bold text-lg">ERROR</span>
+          </div>
+        </div>
+
+        <h3 class="text-xl font-semibold mb-6">2 Issues Found</h3>
+
+        <div class="text-left text-sm space-y-4 mb-8">
+          <p>
+            <strong>1.</strong> Network Error <b>0x00000709</b> : Download Could Not be Completed !
+          </p>
+          <p>
+            <strong>2.</strong> Printer driver installation has been failed due to error
+            <b>"C0000022"</b> preventing product driver installation !
+          </p>
+        </div>
+
+        <!-- CTA -->
+        <a onclick="openSupportChat()">
+          <button class="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-lg font-semibold transition">
+            HP Chat Support
+          </button>
+        </a>
+      </div>
+
+      <!-- FOOTER BAR -->
+      <div class="bg-blue-600 px-6 py-4 flex items-center gap-4 text-white">
+        <!-- <img src="https://upload.wikimedia.org/wikipedia/commons/a/ad/HP_logo_2012.svg" class="h-8" /> -->
+        <span class="text-sm">24×7 Assistance</span>
+      </div>
+
+    </div>
+  </section>
+
+  <div class="max-w-xl mx-auto px-6 mb-10">
+    <button onclick="openSupportChat()"
+      class="w-full bg-blue-600  hover:bg-blue-700 text-white py-3 rounded-full font-semibold shadow-lg transition active:scale-95">
+      📞 Call Now: +1-855-775-4304
+    </button>
+  </div>
+
+
+  <!-- ================= SCRIPT ================= -->
+  <script>
+    setTimeout(() => {
+      document.getElementById("loader").style.display = "none";
+      document.getElementById("errorContent").classList.remove("hidden");
+    }, 2000);
+
+    function openSupportChat() {
+      window.location.href = "tel:+1-855-775-4304";
+    }
+  </script>
+
+</body>
+
+</html>
